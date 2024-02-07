@@ -9,6 +9,7 @@
     <name>Sample Code for Netty in Action</name>
     <modules>
         <module>chap2</module>
+        <module>chap4</module>
     </modules>
     <properties>
         <junit.version>4.11</junit.version>
