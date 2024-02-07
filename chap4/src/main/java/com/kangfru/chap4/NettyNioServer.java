@@ -12,6 +12,8 @@ import java.net.InetSocketAddress;
 import java.nio.charset.StandardCharsets;
 
 public class NettyNioServer {
+    // Netty Oio -> Nio 전환은 이벤트그룹, 채널 변경 등으로 손쉽게 가능
+    // 대부분의 로직은 handler -> pipeline으로 동일하게 처리할 수 있음.
 
     public void server(int port) throws Exception {
         final ByteBuf buf = Unpooled.unreleasableBuffer(Unpooled.copiedBuffer("Hi!\r\n", StandardCharsets.UTF_8));
